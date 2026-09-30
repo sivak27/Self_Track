@@ -31,6 +31,12 @@ export function createApp(): Express {
     });
   });
 
+  app.get("/api/health", (req: Request, res: Response) => {
+    res.json({
+      status: "ok",
+    });
+  });
+
   // Mount API endpoints
   app.use("/api", apiRouter);
 
