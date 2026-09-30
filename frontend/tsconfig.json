@@ -24,10 +24,10 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/lib/utils/*": ["src/utils/*"],
-      "@/lib/validations/*": ["src/validations/*"],
-      "@/lib/*": ["src/*"],
-      "@/*": ["src/*"]
+      "@/lib/utils/*": ["./src/utils/*"],
+      "@/lib/validations/*": ["./src/validations/*"],
+      "@/lib/*": ["./src/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"]
