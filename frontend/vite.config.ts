@@ -1,0 +1,27 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  css: {
+    postcss: {},
+  },
+  resolve: {
+    alias: {
+      "@/lib/utils": path.resolve(__dirname, "./src/utils"),
+      "@/lib/validations": path.resolve(__dirname, "./src/validations"),
+      "@/lib": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  server: {
+    port: 3000,
+    host: true,
+  },
+});

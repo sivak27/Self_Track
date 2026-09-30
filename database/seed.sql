@@ -1,0 +1,8 @@
+-- ==============================================================================
+-- PERSONAL CONTROL CENTER - DATABASE SEED POLICY
+-- ==============================================================================
+-- Real Data Only: No mock, fake, demo, or placeholder application data is seeded.
+-- Default user categories and income sources are automatically created upon genuine
+-- user registration through POST /api/auth/register.
+-- All personal financial records (expenses, income, budgets, tasks, projects, goals)
+-- must be entered directly by authenticated users.
