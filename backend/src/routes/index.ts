@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 import authRoutes from "./auth.routes.js";
 import expenseRoutes from "./expense.routes.js";
 import incomeRoutes from "./income.routes.js";
@@ -22,7 +22,7 @@ apiRouter.use("/projects", projectRoutes);
 apiRouter.use("/goals", goalRoutes);
 apiRouter.use("/analytics", analyticsRoutes);
 apiRouter.use("/settings", settingsRoutes);
-apiRouter.get("/health", (req, res) => {
+apiRouter.get("/health", (req: Request, res: Response) => {
   res.json({
     status: "ok",
   });
